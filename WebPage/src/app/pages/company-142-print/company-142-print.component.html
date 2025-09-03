@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="topbar">
+    <button type="button" class="exit" [routerLink]="['/']">Esci</button>
+  </div>
+  <h2>Packing List</h2>
+
+
+
+  <label for="list">Numero Lista</label>
+  <input id="list" [(ngModel)]="listNumber" (keyup.enter)="print()" placeholder="Inserisci numero lista" autocomplete="off" />
+
+  <label for="wh">Magazzino</label>
+  <select id="wh" [(ngModel)]="warehouse" (change)="onWarehouseChange()">
+    <option value="">-- Seleziona Magazzino --</option>
+    <option *ngFor="let w of warehouses" [value]="w.code">{{ w.code }}</option>
+  </select>
+
+  <label for="printer">Stampante</label>
+  <select id="printer" [(ngModel)]="printerIp" [disabled]="!filteredPrinters.length">
+    <option value="" *ngIf="!filteredPrinters.length">-- Seleziona Magazzino prima --</option>
+    <option *ngFor="let p of filteredPrinters" [value]="p.ip">{{ p.name }}</option>
+  </select>
+
+  <button (click)="print()" [disabled]="busy">
+    {{ busy ? 'Stampa in corso...' : 'Stampa Etichette' }}
+  </button>
+
+  <p class="status">{{ message }}</p>
+</div>

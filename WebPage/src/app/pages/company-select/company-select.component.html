@@ -1,0 +1,17 @@
+<div class="mobile-card">
+  <form (ngSubmit)="next()" #f="ngForm">
+    <label for="company" class="label">Azienda</label>
+
+    <select [(ngModel)]="selectedRouteKey"
+            name="company"
+            id="company"
+            required
+            class="input">
+      <option *ngFor="let c of companies" [ngValue]="c.routeKey">
+        {{ c.label }}
+      </option>
+    </select>
+
+    <button type="submit" class="btn" [disabled]="f.invalid">Avanti</button>
+  </form>
+</div>

@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="topbar">
+    <button type="button" class="exit" [routerLink]="['/']">Esci</button>
+  </div>
+  <h2>Ristampa Etichette — Packing List</h2>
+
+
+  <label for="udc">UDC</label>
+  <input id="udc"
+         [(ngModel)]="udc"
+         (keyup.enter)="reprint()"
+         placeholder="Inserisci UDC"
+         autocomplete="off" />
+
+  <!-- Magazzino -->
+  <label for="wh">Magazzino</label>
+  <select id="wh" [(ngModel)]="warehouse" (change)="onWarehouseChange()">
+    <option value="">-- Seleziona Magazzino --</option>
+    <option *ngFor="let w of warehouses" [value]="w.code">{{ w.code }}</option>
+  </select>
+
+  <!-- Stampante -->
+  <label for="printer">Stampante</label>
+  <select id="printer" [(ngModel)]="printerIp" [disabled]="!filteredPrinters.length">
+    <option value="" *ngIf="!filteredPrinters.length">-- Seleziona Magazzino prima --</option>
+    <option *ngFor="let p of filteredPrinters" [value]="p.ip">{{ p.name }}</option>
+  </select>
+
+  <!-- Action -->
+  <button (click)="reprint()" [disabled]="busy">
+    {{ busy ? 'Ristampa in corso...' : 'Ristampa Etichette' }}
+  </button>
+
+  <button type="button" class="alt" [routerLink]="['/company/156/print']">
+    Torna alla Stampa
+  </button>
+
+  <!-- Status -->
+  <p class="status">{{ message }}</p>
+</div>

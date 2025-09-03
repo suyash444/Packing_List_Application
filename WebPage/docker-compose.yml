@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  packing-list-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: packing-list-app-production
+    ports:
+      - "9000:80"  
+    restart: unless-stopped

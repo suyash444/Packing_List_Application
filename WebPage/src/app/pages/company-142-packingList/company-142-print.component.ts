@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { PrintService } from '../../services/print.service';
 import { RouterModule } from '@angular/router';
-
+import { BIG_BY_WAREHOUSE, type Printer, type WarehouseCode } from '../../printers/printer-catalog';
 
 @Component({
   selector: 'app-company-142-print',
@@ -15,50 +15,17 @@ import { RouterModule } from '@angular/router';
 export class Company142PrintComponent {
   title = 'Packing List';
 
-  
+ 
   listNumber = '';
   company = '142';
-  warehouse = '';                 
+
+  // warehouse & printer
+  warehouses = [{ code: 'V1' }, { code: 'V2' }, { code: 'M1' }];
+  warehouse: WarehouseCode | '' = '';
+  filteredPrinters: Printer[] = [];
   printerIp = '';
   port = 9100;
 
-  
-  warehouses = [{ code: 'V1' }, { code: 'V2' }, { code: 'M1' }];
-
-  printersByWarehouse: Record<string, { name: string; ip: string }[]> = {
-    V1: [
-      { name: 'V1 - Printer - Zebr1', ip: '192.168.70.101' },
-      { name: 'V1 - Printer - Zebr2', ip: '192.168.70.102' },
-      { name: 'V1 - Printer - Zebr3', ip: '192.168.70.103' },
-      { name: 'V1 - Printer - Zebr4', ip: '192.168.70.104' },
-      { name: 'V1 - Printer - Zebr5', ip: '192.168.70.105' },
-      { name: 'V1 - Printer - Zebr6', ip: '192.168.70.106' },
-      { name: 'V1 - Printer - Zebr7', ip: '192.168.70.107' },
-      { name: 'V1 - Printer - Zebr8', ip: '192.168.70.108' }
-    ],
-    V2: [
-      { name: 'V2 - Printer - Zebr1', ip: '192.168.41.101' },
-      { name: 'V2 - Printer - Zebr2', ip: '192.168.41.102' },
-      { name: 'V2 - Printer - Zebr3', ip: '192.168.41.103' },
-      { name: 'V2 - Printer - Zebr4', ip: '192.168.41.104' },
-      { name: 'V2 - Printer - Zebr5', ip: '192.168.41.105' },
-      { name: 'V2 - Printer - Zebr6', ip: '192.168.41.106' },
-      { name: 'V2 - Printer - Zebr7', ip: '192.168.41.107' },
-      { name: 'V2 - Printer - Zebr8', ip: '192.168.41.108' }
-    ],
-    M1: [
-      { name: 'M1 - Printer - Zebr1', ip: '192.168.170.101' },
-      { name: 'M1 - Printer - Zebr2', ip: '192.168.170.102' },
-      { name: 'M1 - Printer - Zebr3', ip: '192.168.170.103' },
-      { name: 'M1 - Printer - Zebr4', ip: '192.168.170.104' },
-      { name: 'M1 - Printer - Zebr5', ip: '192.168.170.105' },
-      { name: 'M1 - Printer - Zebr6', ip: '192.168.170.106' },
-      { name: 'M1 - Printer - Zebr7', ip: '192.168.170.107' },
-      { name: 'M1 - Printer - Zebr8', ip: '192.168.170.108' }
-    ]
-  };
-
-  filteredPrinters: { name: string; ip: string }[] = [];
 
   
   busy = false;
@@ -68,11 +35,10 @@ export class Company142PrintComponent {
 
  
 
+  // When the user selects a warehouse, we auto-load BIG (ZBR) printers for that site
   onWarehouseChange() {
-    this.filteredPrinters = this.warehouse
-      ? (this.printersByWarehouse[this.warehouse] || [])
-      : [];
-    this.printerIp = this.filteredPrinters.length ? this.filteredPrinters[0].ip : '';
+    this.filteredPrinters = this.warehouse ? BIG_BY_WAREHOUSE[this.warehouse] : [];
+    this.printerIp = this.filteredPrinters[0]?.ip ?? '';
   }
 
   

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CompanySelectComponent } from './pages/company-select/company-select.component';
-import { Company142PrintComponent } from './pages/company-142-print/company-142-print.component';
-import { Company156PrintComponent } from './pages/company-156-print/company-156-print.component';
-import { Company156ReprintComponent } from './pages/company-156-reprint/company-156-reprint.component';
+import { Company142PrintComponent } from './pages/company-142-packingList/company-142-print.component';
+import { Company156PrintComponent } from './pages/company-156-Inbound/company-156-print.component';
+import { Company156ReprintComponent } from './pages/company-156-reprintInbound/company-156-reprint.component';
 import { Company156PositionComponent } from './pages/company-156-position/company-156-position.component';
 
 

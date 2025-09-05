@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./company-156-reprint.component.css']
 })
 export class Company156ReprintComponent {
-  title = 'Packing List';
+  title = 'Inbound';
 
  
   udc = '';

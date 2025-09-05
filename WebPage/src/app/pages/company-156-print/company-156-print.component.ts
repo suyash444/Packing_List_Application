@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./company-156-print.component.css']
 })
 export class Company156PrintComponent {
-  title = 'Packing List';
+  title = 'Inbound';
 
   
   ean = '';

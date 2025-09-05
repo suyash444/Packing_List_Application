@@ -1,17 +1,21 @@
-<div class="mobile-card">
-  <form (ngSubmit)="next()" #f="ngForm">
-    <label for="company" class="label">Azienda</label>
+<div class="card">
+  <h2>Seleziona</h2>
 
-    <select [(ngModel)]="selectedRouteKey"
-            name="company"
-            id="company"
-            required
-            class="input">
-      <option *ngFor="let c of companies" [ngValue]="c.routeKey">
-        {{ c.label }}
-      </option>
-    </select>
+  <label for="companyId">Azienda</label>
+  <select id="companyId"
+          [(ngModel)]="selectedCompanyId"
+          (change)="onCompanyChange()">
+    <option *ngFor="let c of companies" [ngValue]="c.id">
+      {{ c.label }}
+    </option>
+  </select>
 
-    <button type="submit" class="btn" [disabled]="f.invalid">Avanti</button>
-  </form>
+  <label for="feature">Funzione</label>
+  <select id="feature" [(ngModel)]="selectedFeatureKey">
+    <option *ngFor="let f of allFeatures" [ngValue]="f.key">
+      {{ f.label }}
+    </option>
+  </select>
+
+  <button type="button" (click)="goNext()">Avanti</button>
 </div>

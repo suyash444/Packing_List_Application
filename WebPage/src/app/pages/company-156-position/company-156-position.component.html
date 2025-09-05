@@ -1,0 +1,59 @@
+<div class="page">
+  <div class="card">
+
+    <button type="button" class="exit" [routerLink]="['/']">Esci</button>
+
+    <h2>Ricerca Ordine</h2>
+
+    <input [(ngModel)]="orderInput"
+           placeholder="Inserisci ordine"
+           (keyup.enter)="searchOrder()" />
+
+    <button class="primary" (click)="searchOrder()">Cerca</button>
+
+    <div *ngIf="orders.length">
+
+      <h3>Ordine: {{ orderInput }}</h3>
+
+      <div class="badge">
+        Completati: {{ completed }} / {{ totalArticles }} — Rimasti: {{ remaining }}
+      </div>
+
+      <div class="kv"><span>Sales Order:</span><span>{{ orders[0].salesOrder }}</span></div>
+      <div class="kv"><span>Status:</span><span>{{ orders[0].status }}</span></div>
+
+      <div class="panel">
+        <p><b>SKU:</b> {{ currentArticles[currentIndex].sku }}</p>
+        <p><b>UDC:</b> {{ currentArticles[currentIndex].udc }}</p>
+        <p>
+          <b>Position:</b> {{ formatPosition(currentArticles[currentIndex].position) }}
+          &nbsp;|&nbsp;<b>TOT:</b> {{ currentArticles[currentIndex].tot }}
+        </p>
+        <p><b>Quantità:</b> {{ currentArticles[currentIndex].qnt }}</p>
+      </div>
+
+      <input [(ngModel)]="userUdc"
+             (keyup.enter)="scanAny()"
+             placeholder="Scansiona UDC"
+             autofocus />
+
+      <button class="primary" (click)="scanAny()">Conferma UDC</button>
+
+      <div class="controls">
+        <button class="outline" (click)="prev()" [disabled]="currentIndex === 0">Prev</button>
+        <div class="counter">{{ currentIndex + 1 }}/{{ totalArticles }}</div>
+        <button class="outline" (click)="next()" [disabled]="currentIndex === totalArticles - 1">Next</button>
+      </div>
+
+      <input type="number"
+             min="1"
+             [max]="totalArticles"
+             (change)="jumpToFromInput($event)"
+             placeholder="Vai al record" />
+    </div>
+
+    <!-- Toast -->
+    <div *ngIf="toast" class="toast" [ngClass]="toast.type">{{ toast.text }}</div>
+
+  </div>
+</div>

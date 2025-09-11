@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of} from 'rxjs';
 
 export interface Print142Request { ip: string; port: number; listNumber: string; company: string; }
 export interface Print156Request { ip: string; port: number; ean: string; baseUdc: string; }
 export interface Reprint156Request { ip: string; port: number; udc: string; }
+export interface Print101Request {ip: string; port: number; qr: string; ean: string; }
 
 @Injectable({ providedIn: 'root' })
 export class PrintService {
@@ -20,6 +21,12 @@ export class PrintService {
   // 156: 
   private readonly print156Endpoint = `/api/PrintLabelAcc/printAccBaseUdc`;
   private readonly reprint156Endpoint = `/api/PrintLabelAcc/ReprintLabelAcc`;
+
+  //101 :
+  private readonly print101Endpoint = `/api/PrintBenettonLabel/PrintItemLabel`;
+
+ 
+
 
   constructor(private http: HttpClient) { }
 
@@ -68,5 +75,37 @@ export class PrintService {
       .set('company', '156');
     const headers = new HttpHeaders({ Accept: 'text/plain' });
     return this.http.post(this.reprint156Endpoint, null, { params, headers, responseType: 'text' });
+  }
+
+  
+  // ----------  Company 101 ----------
+  
+  private toBase64Utf8(value: string): string {
+    const bytes = new TextEncoder().encode(value);
+    let bin = '';
+    for (const b of bytes) bin += String.fromCharCode(b);
+    return btoa(bin);
+  }
+
+  validate101(payload: { qr: string; ean: string }): Observable<void> {
+    return of(void 0); 
+  }
+
+  /** 101: Print Etichetta Articoli */
+  print101(req: Print101Request): Observable<string> {
+    const qrBase64 = this.toBase64Utf8(req.qr); 
+
+    const params = new HttpParams()
+      .set('IpPrinter', req.ip)
+      .set('PortPrinter', String(req.port))
+      .set('QrBase64', qrBase64)
+      .set('Ean', req.ean);
+
+    const headers = new HttpHeaders({ Accept: 'text/plain' });
+    return this.http.post(this.print101Endpoint, null, {
+      params,
+      headers,
+      responseType: 'text'
+    });
   }
 }

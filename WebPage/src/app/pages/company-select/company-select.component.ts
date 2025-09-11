@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
-type FeatureKey = 'packing-list' | 'inbound' | 'position';
+type FeatureKey = 'packing-list' | 'inbound' | 'position' | 'articles';
 
 @Component({
   selector: 'app-company-select',
@@ -16,31 +16,36 @@ export class CompanySelectComponent implements OnInit {
 
   companies = [
     { id: 142, label: 'Company (142)' },
-    { id: 156, label: 'Company (156)' }
+    { id: 156, label: 'Company (156)' },
+    { id: 101, label: 'Company (101)' }
   ];
 
   allFeatures: { key: FeatureKey; label: string }[] = [
     { key: 'packing-list', label: 'Packing List' },
     { key: 'inbound', label: 'Inbound' },
     { key: 'position', label: 'Position' },
+    { key: 'articles', label: 'Etichetta Articoli' }
   ];
 
   
   availability: Record<number, Record<FeatureKey, boolean>> = {
-    142: { 'packing-list': true, inbound: false, position: false },
-    156: { 'packing-list': false, inbound: true, position: true },
+    142: { 'packing-list': true, inbound: false, position: false, 'articles': false },
+    156: { 'packing-list': false, inbound: true, position: true, 'articles': false },
+    101: { 'packing-list': false, inbound: false, position: false, 'articles': true }
   };
 
 
   routeMap: Record<number, Partial<Record<FeatureKey, string>>> = {
     142: { 'packing-list': '/company/142/print' },
-    156: { inbound: '/company/156/print', position: '/company/156/position' }
+    156: { inbound: '/company/156/print', position: '/company/156/position' },
+    101: { 'articles': '/company/101/articles' }
   };
 
   featureLabel: Record<FeatureKey, string> = {
     'packing-list': 'Packing List',
     inbound: 'Inbound',
-    position: 'Position'
+    position: 'Position',
+    'articles': 'Etichetta Articoli'
   };
 
   selectedCompanyId = 142;
@@ -51,6 +56,12 @@ export class CompanySelectComponent implements OnInit {
   ngOnInit(): void {
    
     this.onCompanyChange();
+  }
+
+  // (  if we want to bind the dropdown only to allowed features) like only true in availability table)
+  get availableFeatures() {
+    const table = this.availability[this.selectedCompanyId] || {};
+    return this.allFeatures.filter(f => table[f.key]);
   }
 
   private firstAvailableFeature(companyId: number): FeatureKey {

@@ -1,0 +1,53 @@
+<div class="card">
+  <a class="exit" [routerLink]="['/']">Esci</a>
+  <h2>{{ title }}</h2>
+
+  <label for="qr">QR</label>
+  <input id="qr"
+         [(ngModel)]="qr"
+         type="text"
+         (keyup.enter)="goToEan()"
+         autocomplete="off" autocapitalize="off" autocorrect="off"
+         spellcheck="false" inputmode="text"
+         placeholder="Scansiona QR" />
+
+
+  <label for="ean">EAN</label>
+  <input #eanInput
+         id="ean"
+         [(ngModel)]="ean"
+         (keyup.enter)="validate()"
+         placeholder="Scansiona/Inserisci EAN"
+         autocomplete="off" />
+
+  <button class="primary" (click)="validate()" [disabled]="busy">
+    {{ busy ? 'Verifica in corso…' : 'Conferma dati' }}
+  </button>
+
+  <div class="row">
+    <div class="col">
+      <label for="wh">Magazzino</label>
+      <select id="wh" [(ngModel)]="warehouse" (change)="onWarehouseChange()">
+        <option value="">-- Seleziona Magazzino --</option>
+        <option *ngFor="let w of warehouses" [value]="w.code">{{ w.code }}</option>
+      </select>
+    </div>
+    <div class="col">
+      <label for="printer">Stampante (ZEBR)</label>
+      <select id="printer" [(ngModel)]="printerIp" [disabled]="!filteredPrinters.length">
+        <option value="" *ngIf="!filteredPrinters.length">-- Seleziona Magazzino prima --</option>
+        <option *ngFor="let p of filteredPrinters" [value]="p.ip">{{ p.name }}</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="primary" (click)="print()" [disabled]="busy || !canPrint">
+    {{ busy ? 'Stampa in corso…' : 'Stampa Etichetta' }}
+  </button>
+
+  <div class="toast" *ngIf="toast" [class.success]="toast.type==='success'"
+       [class.warning]="toast.type==='warning'"
+       [class.error]="toast.type==='error'">
+    {{ toast.text }}
+  </div>
+</div>

@@ -5,6 +5,8 @@ import { Company142PrintComponent } from './pages/company-142-packingList/compan
 import { Company156PrintComponent } from './pages/company-156-Inbound/company-156-print.component';
 import { Company156ReprintComponent } from './pages/company-156-reprintInbound/company-156-reprint.component';
 import { Company156PositionComponent } from './pages/company-156-position/company-156-position.component';
+import { Company101ArticlesComponent } from './pages/company-101-articles/company-101-articles.component';
+
 
 
 const routes: Routes = [
@@ -21,6 +23,7 @@ const routes: Routes = [
 
   { path: 'company/156/position', component: Company156PositionComponent },
 
+  { path: 'company/101/articles', component: Company101ArticlesComponent },
  
   { path: '**', redirectTo: '' }
 ];

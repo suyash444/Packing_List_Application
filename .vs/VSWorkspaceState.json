@@ -4,8 +4,13 @@
     "\\WebPage",
     "\\WebPage\\src",
     "\\WebPage\\src\\app",
-    "\\WebPage\\src\\app\\pages"
+    "\\WebPage\\src\\app\\pages",
+    "\\WebPage\\src\\app\\pages\\company-101-articles",
+    "\\WebPage\\src\\app\\pages\\company-156-position",
+    "\\WebPage\\src\\app\\pages\\company-156-reprintInbound",
+    "\\WebPage\\src\\app\\printers",
+    "\\WebPage\\src\\app\\services"
   ],
-  "SelectedNode": "\\WebPage\\src\\app\\printers",
+  "SelectedNode": "\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.html",
   "PreviewInSolutionExplorer": false
 }

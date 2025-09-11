@@ -1,0 +1,100 @@
+.card {
+  max-width: 480px;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.exit {
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #1766ff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h2 {
+  text-align: center;
+  margin: 6px 0 12px;
+  font-size: 22px;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+  margin: 8px 0 4px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+  button.primary {
+    margin-top: 10px;
+    background: #0b61ff;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+  }
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+@media (min-width: 420px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.col {
+  display: block;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 12px;
+  max-width: 88%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+  z-index: 1000;
+  text-align: center;
+}
+
+  .toast.success {
+    background: #e8f7ee;
+    color: #0f6b2f;
+    border: 1px solid #bfe6cc;
+  }
+
+  .toast.warning {
+    background: #fff6e5;
+    color: #8a5200;
+    border: 1px solid #ffe1b3;
+  }
+
+  .toast.error {
+    background: #feecec;
+    color: #8a1f1f;
+    border: 1px solid #f6c6c6;
+  }

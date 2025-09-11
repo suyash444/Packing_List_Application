@@ -4,6 +4,7 @@
 
   <label for="qr">QR</label>
   <input id="qr"
+         #qrInput
          [(ngModel)]="qr"
          type="text"
          (keyup.enter)="goToEan()"
@@ -19,9 +20,9 @@
          (keyup.enter)="validate()"
          placeholder="Scansiona/Inserisci EAN"
          autocomplete="off" />
-
-  <button class="primary" (click)="validate()" [disabled]="busy">
-    {{ busy ? 'Verifica in corso…' : 'Conferma dati' }}
+  
+  <button class="secondary" type="button" (click)="clearFields()" [disabled]="busy">
+    Pulisci campi
   </button>
 
   <div class="row">

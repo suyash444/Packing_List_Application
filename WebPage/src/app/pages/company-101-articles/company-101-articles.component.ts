@@ -33,6 +33,7 @@ export class Company101ArticlesComponent {
   private toastTimer: any;
 
   @ViewChild('eanInput') eanInput!: ElementRef<HTMLInputElement>;
+  @ViewChild('qrInput') qrInput!: ElementRef<HTMLInputElement>;
 
   constructor(private printService: PrintService) { }
 
@@ -66,7 +67,17 @@ export class Company101ArticlesComponent {
       next: () => {
         this.busy = false;
         this.canPrint = true;
-        this.showToast('Dati validi. Ora puoi stampare l’etichetta.', 'success');
+        // If a warehouse and printer are already selected, print immediately.
+        if (this.warehouse && this.printerIp) {
+          this.print();                       
+        } else {
+          // Ask the user to select what’s missing
+          if (!this.warehouse) {
+            this.showToast('Seleziona un magazzino.', 'warning', 2000);
+          } else if (!this.printerIp) {
+            this.showToast('Seleziona una stampante.', 'warning', 2000);
+          }
+        }
       },
       error: (err:any) => {
         this.busy = false;
@@ -75,6 +86,27 @@ export class Company101ArticlesComponent {
       }
     });
   }
+  private focusQr() {
+    setTimeout(() => this.qrInput?.nativeElement?.focus(), 0);
+  }
+
+  clearFields() {
+    this.qr = '';
+    this.ean = '';
+    this.canPrint = false;
+    this.focusQr();
+    this.showToast('Campi puliti.', 'success', 1200);
+  }
+
+  private resetForNext() {
+    this.qr = '';
+    this.ean = '';
+    this.canPrint = false;
+    this.focusQr();
+  }
+
+  //  put cursor in QR when page opens
+  ngAfterViewInit() { this.focusQr(); }
 
   print() {
     if (!this.canPrint) { this.showToast('Conferma prima QR ed EAN.', 'warning'); return; }
@@ -92,11 +124,13 @@ export class Company101ArticlesComponent {
       next: () => {
         this.busy = false;
         this.showToast('Etichetta stampata con successo.', 'success');
+        this.resetForNext(); 
       },
       error: (err: any) => {                    
         this.busy = false;
         const msg = err?.error || err?.message || 'Errore durante la stampa.';
         this.showToast(msg, 'error', 2200);
+        this.focusQr();
       }
     });
   }

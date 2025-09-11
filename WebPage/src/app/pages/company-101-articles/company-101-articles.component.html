@@ -18,6 +18,7 @@
          id="ean"
          [(ngModel)]="ean"
          (keyup.enter)="validate()"
+         (change)="validate()"
          placeholder="Scansiona/Inserisci EAN"
          autocomplete="off" />
   

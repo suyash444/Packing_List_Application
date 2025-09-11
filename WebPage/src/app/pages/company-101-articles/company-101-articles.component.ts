@@ -57,6 +57,7 @@ export class Company101ArticlesComponent {
 
   // Validate QR + EAN against backend 
   validate() {
+    if (this.busy) { return; } 
     const qr = this.qr;
     const ean = this.ean.trim();
     if (!qr) { this.showToast('Inserisci/scansiona il QR.', 'warning'); return; }
@@ -67,25 +68,21 @@ export class Company101ArticlesComponent {
       next: () => {
         this.busy = false;
         this.canPrint = true;
-        // If a warehouse and printer are already selected, print immediately.
         if (this.warehouse && this.printerIp) {
-          this.print();                       
+          this.print();
         } else {
-          // Ask the user to select what’s missing
-          if (!this.warehouse) {
-            this.showToast('Seleziona un magazzino.', 'warning', 2000);
-          } else if (!this.printerIp) {
-            this.showToast('Seleziona una stampante.', 'warning', 2000);
-          }
+          if (!this.warehouse) this.showToast('Seleziona un magazzino.', 'warning', 2000);
+          else if (!this.printerIp) this.showToast('Seleziona una stampante.', 'warning', 2000);
         }
       },
-      error: (err:any) => {
+      error: (err: any) => {
         this.busy = false;
         const msg = err?.error || err?.message || 'Validazione non riuscita.';
         this.showToast(msg, 'error', 2200);
       }
     });
   }
+
   private focusQr() {
     setTimeout(() => this.qrInput?.nativeElement?.focus(), 0);
   }

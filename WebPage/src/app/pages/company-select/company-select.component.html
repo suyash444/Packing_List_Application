@@ -12,7 +12,7 @@
 
   <label for="feature">Funzione</label>
   <select id="feature" [(ngModel)]="selectedFeatureKey">
-    <option *ngFor="let f of allFeatures" [ngValue]="f.key">
+    <option *ngFor="let f of availableFeatures" [ngValue]="f.key">
       {{ f.label }}
     </option>
   </select>

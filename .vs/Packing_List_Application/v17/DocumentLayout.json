@@ -3,12 +3,80 @@
   "WorkspaceRootPath": "C:\\Packing_List_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\printers\\printer-catalog.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\printers\\printer-catalog.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\services\\print.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\services\\print.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-select\\company-select.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-select\\company-select.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\app-routing-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\app-routing-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\printers\\printer-catalog.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\printers\\printer-catalog.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\services\\order.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\services\\order.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\app.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\app.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\app-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\app-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-select\\company-select.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -17,14 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-142-packingList\\company-142-print.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-142-packingList\\company-142-print.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\pages\\company-select\\company-select.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Packing_List_Application\\WebPage\\src\\app\\app-routing-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebPage\\src\\app\\app-routing-module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,24 +94,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "company-101-articles.component.html",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.html",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.html",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.html",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-10T13:59:06.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "company-101-articles.component.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-10T13:56:50.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "print.service.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\services\\print.service.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\services\\print.service.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\services\\print.service.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\services\\print.service.ts",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-10T14:00:12.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "company-select.component.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-05T10:18:08.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "company-156-reprint.component.html",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.html",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.html",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.html",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-10T14:38:47.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "company-156-position.component.html",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.html",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.html",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.html",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-10T14:39:39.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "company-101-articles.component.css",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.css",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.css",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.css",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-101-articles\\company-101-articles.component.css",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-10T13:59:36.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "app-routing-module.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\app-routing-module.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\app-routing-module.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\app-routing-module.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\app-routing-module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-05T10:05:58.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "company-select.component.html",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.html",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-select\\company-select.component.html",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.html",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-select\\company-select.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-09-10T13:32:28.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "company-156-position.component.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-10T14:06:00.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "company-156-reprint.component.ts",
               "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.ts",
               "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.ts",
               "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.ts",
               "RelativeToolTip": "WebPage\\src\\app\\pages\\company-156-reprintInbound\\company-156-reprint.component.ts",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-09-05T10:45:49.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
+              "Title": "main.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\main.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\main.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\main.ts",
+              "RelativeToolTip": "WebPage\\src\\main.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-10T14:42:46.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "printer-catalog.ts",
               "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\printers\\printer-catalog.ts",
               "RelativeDocumentMoniker": "WebPage\\src\\app\\printers\\printer-catalog.ts",
@@ -64,20 +267,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "company-156-print.component.ts",
-              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
-              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
-              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
-              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "order.service.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\services\\order.service.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\services\\order.service.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\services\\order.service.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\services\\order.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-09-05T10:18:22.66Z",
+              "WhenOpened": "2025-09-10T14:41:49.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
+              "Title": "app.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\app.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\app.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\app.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\app.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-10T14:41:41.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "app.spec.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\app.spec.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\app.spec.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\app.spec.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\app.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-10T14:41:37.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "app-module.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\app-module.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\app-module.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\app-module.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\app-module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-09-10T14:41:06.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "company-156-position.component.css",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.css",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.css",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.css",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-156-position\\company-156-position.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-10T14:35:31.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "company-select.component.css",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.css",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-select\\company-select.component.css",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.css",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-select\\company-select.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-09-10T14:35:24.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "company-142-print.component.ts",
               "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-142-packingList\\company-142-print.component.ts",
               "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-142-packingList\\company-142-print.component.ts",
@@ -90,28 +358,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "company-select.component.ts",
-              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
-              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
-              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
-              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-select\\company-select.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "company-156-print.component.ts",
+              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
+              "RelativeDocumentMoniker": "WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
+              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
+              "RelativeToolTip": "WebPage\\src\\app\\pages\\company-156-Inbound\\company-156-print.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-09-05T10:18:08.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "app-routing-module.ts",
-              "DocumentMoniker": "C:\\Packing_List_Application\\WebPage\\src\\app\\app-routing-module.ts",
-              "RelativeDocumentMoniker": "WebPage\\src\\app\\app-routing-module.ts",
-              "ToolTip": "C:\\Packing_List_Application\\WebPage\\src\\app\\app-routing-module.ts",
-              "RelativeToolTip": "WebPage\\src\\app\\app-routing-module.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-09-05T10:05:58.304Z",
+              "WhenOpened": "2025-09-05T10:18:22.66Z",
               "EditorCaption": ""
             }
           ]

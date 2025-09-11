@@ -17,6 +17,7 @@ export class Company101ArticlesComponent {
 
   // form
   qr = '';
+  place = '';
   ean = '';
 
   // printers (use BIG/ZEBR)
@@ -53,6 +54,9 @@ export class Company101ArticlesComponent {
   // Shift focus from QR to EAN when user presses Enter or after scan
   goToEan() {
     setTimeout(() => this.eanInput?.nativeElement?.focus(), 0);
+  }
+  goToQr() {
+    setTimeout(() => this.qrInput?.nativeElement?.focus(), 0);
   }
 
   // Validate QR + EAN against backend 
@@ -115,6 +119,7 @@ export class Company101ArticlesComponent {
     this.printService.print101({
       ip: this.printerIp,
       port: this.port,
+      place: this.place.trim(),
       qr: this.qr,
       ean: this.ean.trim()
     }).subscribe({

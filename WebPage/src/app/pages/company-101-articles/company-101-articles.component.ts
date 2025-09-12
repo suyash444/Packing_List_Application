@@ -35,7 +35,7 @@ export class Company101ArticlesComponent {
 
   @ViewChild('eanInput') eanInput!: ElementRef<HTMLInputElement>;
   @ViewChild('qrInput') qrInput!: ElementRef<HTMLInputElement>;
-
+  @ViewChild('placeInput') placeInput!: ElementRef<HTMLInputElement>;
   constructor(private printService: PrintService) { }
 
   
@@ -89,6 +89,8 @@ export class Company101ArticlesComponent {
 
   private focusQr() {
     setTimeout(() => this.qrInput?.nativeElement?.focus(), 0);
+  } private focusPosition() {
+    setTimeout(() => this.placeInput?.nativeElement?.focus(), 0);
   }
 
   clearFields() {
@@ -106,8 +108,8 @@ export class Company101ArticlesComponent {
     this.focusQr();
   }
 
-  //  put cursor in QR when page opens
-  ngAfterViewInit() { this.focusQr(); }
+ 
+  ngAfterViewInit() { this.focusPosition(); }
 
   print() {
     if (!this.canPrint) { this.showToast('Conferma prima QR ed EAN.', 'warning'); return; }

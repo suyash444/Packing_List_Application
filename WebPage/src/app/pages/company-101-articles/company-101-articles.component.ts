@@ -122,11 +122,14 @@ export class Company101ArticlesComponent {
       place: this.place.trim(),
       qr: this.qr,
       ean: this.ean.trim()
+      
     }).subscribe({
       next: () => {
         this.busy = false;
         this.showToast('Etichetta stampata con successo.', 'success');
-        this.resetForNext(); 
+        this.resetForNext();
+        this.focusQr();
+
       },
       error: (err: any) => {                    
         this.busy = false;

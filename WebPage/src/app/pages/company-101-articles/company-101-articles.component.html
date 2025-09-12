@@ -3,7 +3,15 @@
   <h2>{{ title }}</h2>
 
 
-
+  <label for="place">Postazione</label>
+  <input id="place"
+         #placeInput 
+         [(ngModel)]="place"
+         type="text"
+         (keyup.enter)="goToQr()"
+         autocomplete="off" autocapitalize="off" autocorrect="off"
+         spellcheck="false" inputmode="text"
+         placeholder="Inserisci la postazione" />
 
   <label for="qr">QR</label>
   <input id="qr"
@@ -25,15 +33,7 @@
          placeholder="Scansiona/Inserisci EAN"
          autocomplete="off" />
 
-  <label for="place">Postazione</label>
-  <input id="place"
-         #qrInput
-         [(ngModel)]="place"
-         type="text"
-         (keyup.enter)="goToQr()"
-         autocomplete="off" autocapitalize="off" autocorrect="off"
-         spellcheck="false" inputmode="text"
-         placeholder="Inserisci la postazione" />
+
 
   <button class="secondary" type="button" (click)="clearFields()" [disabled]="busy">
     Pulisci campi

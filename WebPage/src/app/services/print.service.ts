@@ -5,7 +5,7 @@ import { Observable, of} from 'rxjs';
 export interface Print142Request { ip: string; port: number; listNumber: string; company: string; }
 export interface Print156Request { ip: string; port: number; ean: string; baseUdc: string; }
 export interface Reprint156Request { ip: string; port: number; udc: string; }
-export interface Print101Request {ip: string; port: number; qr: string; ean: string; }
+export interface Print101Request { ip: string; port: number;  place: string; qr: string; ean: string; }
 
 @Injectable({ providedIn: 'root' })
 export class PrintService {
@@ -98,6 +98,7 @@ export class PrintService {
     const params = new HttpParams()
       .set('IpPrinter', req.ip)
       .set('PortPrinter', String(req.port))
+      .set('Postazione', req.place)
       .set('QrBase64', qrBase64)
       .set('Ean', req.ean);
 

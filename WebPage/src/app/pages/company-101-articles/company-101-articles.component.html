@@ -46,7 +46,7 @@
         <option value="">-- Seleziona Magazzino --</option>
         <option *ngFor="let w of warehouses" [value]="w.code">{{ w.code }}</option>
       </select>
-    </div>
+    </div>  
     <div class="col">
       <label for="printer">Stampante (ZEBR)</label>
       <select id="printer" [(ngModel)]="printerIp" [disabled]="!filteredPrinters.length">

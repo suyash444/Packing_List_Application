@@ -112,6 +112,7 @@ export class Company101ArticlesComponent {
   ngAfterViewInit() { this.focusPosition(); }
 
   print() {
+    if (!this.place.trim()) { this.showToast("Inserisci la postazione.", "warning", 2000);return;}
     if (!this.canPrint) { this.showToast('Conferma prima QR ed EAN.', 'warning'); return; }
     if (!this.warehouse) { this.showToast('Seleziona un magazzino.', 'warning'); return; }
     if (!this.printerIp) { this.showToast('Seleziona una stampante.', 'warning'); return; }
